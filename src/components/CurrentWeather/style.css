@@ -1,0 +1,77 @@
+.weather-card {
+    width: 100%;
+    padding: 0 20px 20px 20px;
+    border: 4px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000;
+    background-color: aliceblue;
+    cursor: pointer;
+    align-self: center;
+    animation-duration: 1.3s;
+}
+
+.weather-card>.card-head{
+    font-family: var(--mulish);
+    margin-top: 1rem;
+    color: var(--color-success);
+}
+
+.weather-card>.top,
+.weather-card>.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-card>.top .city {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--opensans);
+    color: var(--color-primary);
+}
+
+.weather-card>.top .weather-type {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--mulish);
+    color: var(--color-danger);
+}
+
+.weather-card>.bottom .temperature {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    font-family: var(--mulish);
+    color: var(--color-warning);
+}
+
+.weather-card>.bottom>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 2rem;
+    font-family: var(--mulish);
+    color: var(--color-secondary);
+}
+
+.weather-card>.bottom>.details>.parameter-row {
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.weather-card>.bottom>.details>.parameter-row>.parameter-label{
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.weather-card>.bottom>.details>.parameter-row>.parameter-label.top{
+    border-bottom: 1px solid rgb(209, 207, 207)
+}
+
+.weather-card>.bottom>.details>.parameter-row>.parameter-value{
+    font-weight: 600;
+    font-size: 12px;
+}

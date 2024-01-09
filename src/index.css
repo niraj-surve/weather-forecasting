@@ -1,0 +1,47 @@
+/** Importing Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/** CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** Declaring Variables */
+:root{
+  --color-primary: #7380ec;
+  --color-secondary: #4f3267;
+  --color-warning: #ffbb55;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+
+  --card-radius: 2rem;
+  --card-bg: #f5f0f0;
+  --card-padding: 1.8rem 3rem 2rem 1.8rem;
+
+  --box-shadow: 0 2rem 3rem var(--color--light);
+
+  --mulish: 'Mulish', sans-serif;
+  --opensans: 'Open Sans', sans-serif;
+}
+
+body{
+  background: url('/public/bg.jpg');
+  background-size: cover;
+}
+
+.container{
+  width: 50%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container > .header{
+  text-align: center;
+  font-family: var(--opensans);
+  font-size: 42px; 
+  animation-duration: 1.3s;
+}
