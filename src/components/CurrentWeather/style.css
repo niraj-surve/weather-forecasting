@@ -10,7 +10,7 @@
     animation-duration: 1.3s;
 }
 
-.weather-card>.card-head{
+.weather-card>.card-head {
     font-family: var(--mulish);
     margin-top: 1rem;
     color: var(--color-success);
@@ -61,17 +61,39 @@
     gap: 1rem;
 }
 
-.weather-card>.bottom>.details>.parameter-row>.parameter-label{
+.weather-card>.bottom>.details>.parameter-row>.parameter-label {
     text-align: left;
     font-weight: 400;
     font-size: 12px;
 }
 
-.weather-card>.bottom>.details>.parameter-row>.parameter-label.top{
+.weather-card>.bottom>.details>.parameter-row>.parameter-label.top {
     border-bottom: 1px solid rgb(209, 207, 207)
 }
 
-.weather-card>.bottom>.details>.parameter-row>.parameter-value{
+.weather-card>.bottom>.details>.parameter-row>.parameter-value {
     font-weight: 600;
     font-size: 12px;
+}
+
+@media screen and (max-width: 64em) {
+    .weather-card>.card-head {
+        font-size: 18px;
+    }
+
+    .weather-card>.top .city {
+        font-size: 14px;
+    }
+
+    .weather-card>.top .weather-type {
+        font-size: 12px;
+    }
+
+    .weather-card>.top img {
+        width: 80px;
+    }
+
+    .weather-card>.bottom .temperature {
+        font-size: 48px;
+    }
 }

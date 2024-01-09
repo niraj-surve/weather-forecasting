@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 
 const WEEK_DAYS = [
@@ -21,7 +21,11 @@ const ForecastWeather = ({ weatherData }) => {
   ];
 
   const { city, data } = weatherData;
-  console.log(data);
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.height = "100%";
+  }, []);
 
   return (
     <div className="forecast-container">
@@ -64,7 +68,7 @@ const ForecastWeather = ({ weatherData }) => {
                 </div>
                 <div className="parameter-row">
                   <span className="parameter-label">Pressure</span>
-                  <span className="parameter-value">{data[0].pres} hPa</span>
+                  <span className="parameter-value">{Math.round(item.pres)} hPa</span>
                 </div>
               </div>
             </div>

@@ -28,6 +28,7 @@
 
 body{
   background: url('/public/bg.jpg');
+  backdrop-filter: blur(5px);
   background-size: cover;
 }
 
@@ -44,4 +45,26 @@ body{
   font-family: var(--opensans);
   font-size: 42px; 
   animation-duration: 1.3s;
+}
+
+@media screen and (max-width: 48em){
+  .container{
+    width: 70%;
+  }
+
+  .container > .header{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 35.5em){
+  body{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container{
+    width: 90%;
+  }
 }
