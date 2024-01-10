@@ -149,4 +149,8 @@
     .forecast-container>.forecast-header {
         font-size: 24px;
     }
+
+    .forecast-card>.bottom{
+        justify-content: space-between;
+    }
 }

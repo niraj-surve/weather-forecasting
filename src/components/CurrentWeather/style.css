@@ -46,16 +46,17 @@
 }
 
 .weather-card>.bottom>.details {
+    width: 10rem;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     font-family: var(--mulish);
     color: var(--color-secondary);
 }
 
 .weather-card>.bottom>.details>.parameter-row {
-    width: 8rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
